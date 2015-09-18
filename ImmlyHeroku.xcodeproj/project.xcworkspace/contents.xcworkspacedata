@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ImmlyHeroku.xcodeproj">
+      location = "self:/Users/i836816/Desktop/Xcode/ImmlyHeroku/ImmlyHeroku.xcodeproj">
    </FileRef>
 </Workspace>

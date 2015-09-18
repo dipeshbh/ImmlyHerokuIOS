@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7367A9121BA2B34B00D1FE19"
-               BuildableName = "ImmlyHeroku.app"
+               BuildableName = "ImmlyHerokuIOS.app"
                BlueprintName = "ImmlyHeroku"
                ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7367A9291BA2B34B00D1FE19"
-               BuildableName = "ImmlyHerokuTests.xctest"
+               BuildableName = "ImmlyHerokuIOSTests.xctest"
                BlueprintName = "ImmlyHerokuTests"
                ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7367A9291BA2B34B00D1FE19"
-               BuildableName = "ImmlyHerokuTests.xctest"
+               BuildableName = "ImmlyHerokuIOSTests.xctest"
                BlueprintName = "ImmlyHerokuTests"
                ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7367A9121BA2B34B00D1FE19"
-            BuildableName = "ImmlyHeroku.app"
+            BuildableName = "ImmlyHerokuIOS.app"
             BlueprintName = "ImmlyHeroku"
             ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7367A9121BA2B34B00D1FE19"
-            BuildableName = "ImmlyHeroku.app"
+            BuildableName = "ImmlyHerokuIOS.app"
             BlueprintName = "ImmlyHeroku"
             ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7367A9121BA2B34B00D1FE19"
-            BuildableName = "ImmlyHeroku.app"
+            BuildableName = "ImmlyHerokuIOS.app"
             BlueprintName = "ImmlyHeroku"
             ReferencedContainer = "container:ImmlyHeroku.xcodeproj">
          </BuildableReference>
@@ -107,6 +107,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "ImmlyHeroku v 0.0.1"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

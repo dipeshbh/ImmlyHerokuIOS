@@ -14,6 +14,37 @@
 		7367A9221BA2B34B00D1FE19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7367A9211BA2B34B00D1FE19 /* Images.xcassets */; };
 		7367A9251BA2B34B00D1FE19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7367A9231BA2B34B00D1FE19 /* LaunchScreen.xib */; };
 		7367A9311BA2B34B00D1FE19 /* ImmlyHerokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A9301BA2B34B00D1FE19 /* ImmlyHerokuTests.swift */; };
+		7367A9411BA2B54500D1FE19 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A93E1BA2B54500D1FE19 /* NewsTableViewController.swift */; };
+		7367A9421BA2B54500D1FE19 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A93F1BA2B54500D1FE19 /* NewsCellTableViewCell.swift */; };
+		7367A9431BA2B54500D1FE19 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A9401BA2B54500D1FE19 /* NewsDetailViewController.swift */; };
+		7367A9501BA33A3A00D1FE19 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9481BA33A3A00D1FE19 /* AudioToolbox.framework */; };
+		7367A9511BA33A3A00D1FE19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9491BA33A3A00D1FE19 /* CFNetwork.framework */; };
+		7367A9521BA33A3A00D1FE19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A94A1BA33A3A00D1FE19 /* CoreGraphics.framework */; };
+		7367A9531BA33A3A00D1FE19 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A94B1BA33A3A00D1FE19 /* libz.dylib */; };
+		7367A9541BA33A3A00D1FE19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A94C1BA33A3A00D1FE19 /* QuartzCore.framework */; };
+		7367A9551BA33A3A00D1FE19 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A94D1BA33A3A00D1FE19 /* Security.framework */; };
+		7367A9571BA33A3A00D1FE19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A94F1BA33A3A00D1FE19 /* SystemConfiguration.framework */; };
+		7367A9591BA33A4400D1FE19 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9581BA33A4400D1FE19 /* libsqlite3.dylib */; };
+		7367A96C1BA33ACA00D1FE19 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9661BA33ACA00D1FE19 /* Bolts.framework */; };
+		7367A96D1BA33ACA00D1FE19 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9671BA33ACA00D1FE19 /* Parse.framework */; };
+		7367A96E1BA33ACA00D1FE19 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9681BA33ACA00D1FE19 /* ParseCrashReporting.framework */; };
+		7367A96F1BA33ACA00D1FE19 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9691BA33ACA00D1FE19 /* ParseFacebookUtils.framework */; };
+		7367A9701BA33ACA00D1FE19 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A96A1BA33ACA00D1FE19 /* ParseFacebookUtilsV4.framework */; };
+		7367A9711BA33ACA00D1FE19 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A96B1BA33ACA00D1FE19 /* ParseUI.framework */; };
+		7367A9761BA33B8C00D1FE19 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9721BA33B8C00D1FE19 /* Fabric.framework */; };
+		7367A9771BA33B8C00D1FE19 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9731BA33B8C00D1FE19 /* TwitterKit.framework */; };
+		7367A9781BA33B8C00D1FE19 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7367A9741BA33B8C00D1FE19 /* TwitterKitResources.bundle */; };
+		7367A9791BA33B8C00D1FE19 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9751BA33B8C00D1FE19 /* TwitterCore.framework */; };
+		7367A97B1BA33BE000D1FE19 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A97A1BA33BE000D1FE19 /* TimelineViewController.swift */; };
+		7367A97D1BA3472900D1FE19 /* BulletinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */; };
+		7394C2EB1BA4E4E800D3E5B3 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */; };
+		7394C2ED1BA4EEF400D3E5B3 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */; };
+		7394C2F21BA53F5900D3E5B3 /* calendar48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2EE1BA53F5900D3E5B3 /* calendar48.png */; };
+		7394C2F31BA53F5900D3E5B3 /* newspaper18.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2EF1BA53F5900D3E5B3 /* newspaper18.png */; };
+		7394C2F41BA53F5900D3E5B3 /* social20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F01BA53F5900D3E5B3 /* social20.png */; };
+		7394C2F51BA53F5900D3E5B3 /* twitter47.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F11BA53F5900D3E5B3 /* twitter47.png */; };
+		7394C2F71BA682F000D3E5B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F61BA682F000D3E5B3 /* iTunesArtwork.png */; };
+		7394C2F91BA6830900D3E5B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +69,37 @@
 		7367A92A1BA2B34B00D1FE19 /* ImmlyHerokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImmlyHerokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7367A92F1BA2B34B00D1FE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7367A9301BA2B34B00D1FE19 /* ImmlyHerokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmlyHerokuTests.swift; sourceTree = "<group>"; };
+		7367A93E1BA2B54500D1FE19 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		7367A93F1BA2B54500D1FE19 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
+		7367A9401BA2B54500D1FE19 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		7367A9481BA33A3A00D1FE19 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7367A9491BA33A3A00D1FE19 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7367A94A1BA33A3A00D1FE19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7367A94B1BA33A3A00D1FE19 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7367A94C1BA33A3A00D1FE19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7367A94D1BA33A3A00D1FE19 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7367A94F1BA33A3A00D1FE19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7367A9581BA33A4400D1FE19 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7367A9661BA33ACA00D1FE19 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7367A9671BA33ACA00D1FE19 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7367A9681BA33ACA00D1FE19 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		7367A9691BA33ACA00D1FE19 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		7367A96A1BA33ACA00D1FE19 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		7367A96B1BA33ACA00D1FE19 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		7367A9721BA33B8C00D1FE19 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		7367A9731BA33B8C00D1FE19 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		7367A9741BA33B8C00D1FE19 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		7367A9751BA33B8C00D1FE19 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		7367A97A1BA33BE000D1FE19 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewController.swift; sourceTree = "<group>"; };
+		7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
+		7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
+		7394C2EE1BA53F5900D3E5B3 /* calendar48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar48.png; sourceTree = "<group>"; };
+		7394C2EF1BA53F5900D3E5B3 /* newspaper18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper18.png; sourceTree = "<group>"; };
+		7394C2F01BA53F5900D3E5B3 /* social20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social20.png; sourceTree = "<group>"; };
+		7394C2F11BA53F5900D3E5B3 /* twitter47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter47.png; sourceTree = "<group>"; };
+		7394C2F61BA682F000D3E5B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +107,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7367A9591BA33A4400D1FE19 /* libsqlite3.dylib in Frameworks */,
+				7367A9501BA33A3A00D1FE19 /* AudioToolbox.framework in Frameworks */,
+				7367A9701BA33ACA00D1FE19 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				7367A9761BA33B8C00D1FE19 /* Fabric.framework in Frameworks */,
+				7367A9511BA33A3A00D1FE19 /* CFNetwork.framework in Frameworks */,
+				7367A9521BA33A3A00D1FE19 /* CoreGraphics.framework in Frameworks */,
+				7367A9531BA33A3A00D1FE19 /* libz.dylib in Frameworks */,
+				7367A96C1BA33ACA00D1FE19 /* Bolts.framework in Frameworks */,
+				7367A96D1BA33ACA00D1FE19 /* Parse.framework in Frameworks */,
+				7367A96E1BA33ACA00D1FE19 /* ParseCrashReporting.framework in Frameworks */,
+				7367A9541BA33A3A00D1FE19 /* QuartzCore.framework in Frameworks */,
+				7367A9551BA33A3A00D1FE19 /* Security.framework in Frameworks */,
+				7367A9791BA33B8C00D1FE19 /* TwitterCore.framework in Frameworks */,
+				7367A9771BA33B8C00D1FE19 /* TwitterKit.framework in Frameworks */,
+				7367A9711BA33ACA00D1FE19 /* ParseUI.framework in Frameworks */,
+				7367A9571BA33A3A00D1FE19 /* SystemConfiguration.framework in Frameworks */,
+				7367A96F1BA33ACA00D1FE19 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +140,25 @@
 		7367A90A1BA2B34B00D1FE19 = {
 			isa = PBXGroup;
 			children = (
+				7394C2F61BA682F000D3E5B3 /* iTunesArtwork.png */,
+				7367A9721BA33B8C00D1FE19 /* Fabric.framework */,
+				7367A9731BA33B8C00D1FE19 /* TwitterKit.framework */,
+				7367A9741BA33B8C00D1FE19 /* TwitterKitResources.bundle */,
+				7367A9751BA33B8C00D1FE19 /* TwitterCore.framework */,
+				7367A9661BA33ACA00D1FE19 /* Bolts.framework */,
+				7367A9671BA33ACA00D1FE19 /* Parse.framework */,
+				7367A9681BA33ACA00D1FE19 /* ParseCrashReporting.framework */,
+				7367A9691BA33ACA00D1FE19 /* ParseFacebookUtils.framework */,
+				7367A96A1BA33ACA00D1FE19 /* ParseFacebookUtilsV4.framework */,
+				7367A96B1BA33ACA00D1FE19 /* ParseUI.framework */,
+				7367A9581BA33A4400D1FE19 /* libsqlite3.dylib */,
+				7367A9481BA33A3A00D1FE19 /* AudioToolbox.framework */,
+				7367A9491BA33A3A00D1FE19 /* CFNetwork.framework */,
+				7367A94A1BA33A3A00D1FE19 /* CoreGraphics.framework */,
+				7367A94B1BA33A3A00D1FE19 /* libz.dylib */,
+				7367A94C1BA33A3A00D1FE19 /* QuartzCore.framework */,
+				7367A94D1BA33A3A00D1FE19 /* Security.framework */,
+				7367A94F1BA33A3A00D1FE19 /* SystemConfiguration.framework */,
 				7367A9151BA2B34B00D1FE19 /* ImmlyHeroku */,
 				7367A92D1BA2B34B00D1FE19 /* ImmlyHerokuTests */,
 				7367A9141BA2B34B00D1FE19 /* Products */,
@@ -79,13 +177,25 @@
 		7367A9151BA2B34B00D1FE19 /* ImmlyHeroku */ = {
 			isa = PBXGroup;
 			children = (
+				7367A97A1BA33BE000D1FE19 /* TimelineViewController.swift */,
 				7367A9181BA2B34B00D1FE19 /* AppDelegate.swift */,
 				7367A91A1BA2B34B00D1FE19 /* FirstViewController.swift */,
 				7367A91C1BA2B34B00D1FE19 /* SecondViewController.swift */,
 				7367A91E1BA2B34B00D1FE19 /* Main.storyboard */,
+				7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */,
+				7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */,
+				7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */,
 				7367A9211BA2B34B00D1FE19 /* Images.xcassets */,
+				7394C2EE1BA53F5900D3E5B3 /* calendar48.png */,
+				7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */,
+				7394C2EF1BA53F5900D3E5B3 /* newspaper18.png */,
+				7394C2F01BA53F5900D3E5B3 /* social20.png */,
+				7394C2F11BA53F5900D3E5B3 /* twitter47.png */,
 				7367A9231BA2B34B00D1FE19 /* LaunchScreen.xib */,
 				7367A9161BA2B34B00D1FE19 /* Supporting Files */,
+				7367A93E1BA2B54500D1FE19 /* NewsTableViewController.swift */,
+				7367A93F1BA2B54500D1FE19 /* NewsCellTableViewCell.swift */,
+				7367A9401BA2B54500D1FE19 /* NewsDetailViewController.swift */,
 			);
 			path = ImmlyHeroku;
 			sourceTree = "<group>";
@@ -125,6 +235,7 @@
 				7367A90F1BA2B34B00D1FE19 /* Sources */,
 				7367A9101BA2B34B00D1FE19 /* Frameworks */,
 				7367A9111BA2B34B00D1FE19 /* Resources */,
+				7367A9451BA2C4C800D1FE19 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,6 +275,12 @@
 				TargetAttributes = {
 					7367A9121BA2B34B00D1FE19 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = QD8AWGTAW5;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					7367A9291BA2B34B00D1FE19 = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,9 +312,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7367A9781BA33B8C00D1FE19 /* TwitterKitResources.bundle in Resources */,
 				7367A9201BA2B34B00D1FE19 /* Main.storyboard in Resources */,
+				7394C2F41BA53F5900D3E5B3 /* social20.png in Resources */,
+				7394C2F31BA53F5900D3E5B3 /* newspaper18.png in Resources */,
 				7367A9251BA2B34B00D1FE19 /* LaunchScreen.xib in Resources */,
 				7367A9221BA2B34B00D1FE19 /* Images.xcassets in Resources */,
+				7394C2F71BA682F000D3E5B3 /* iTunesArtwork.png in Resources */,
+				7394C2F51BA53F5900D3E5B3 /* twitter47.png in Resources */,
+				7394C2F91BA6830900D3E5B3 /* iTunesArtwork.png in Resources */,
+				7394C2F21BA53F5900D3E5B3 /* calendar48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,13 +334,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7367A9451BA2C4C800D1FE19 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 57db928a83fe743200bebb7013ad6fa3c6e344e7 93183eb49822fbd5e95da113c9a5aab89753bca93ebc9d65ea8ab241cb026c7c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7367A90F1BA2B34B00D1FE19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7367A9421BA2B54500D1FE19 /* NewsCellTableViewCell.swift in Sources */,
+				7367A9431BA2B54500D1FE19 /* NewsDetailViewController.swift in Sources */,
+				7394C2EB1BA4E4E800D3E5B3 /* ForumViewController.swift in Sources */,
+				7394C2ED1BA4EEF400D3E5B3 /* ForumTableViewCell.swift in Sources */,
 				7367A91D1BA2B34B00D1FE19 /* SecondViewController.swift in Sources */,
 				7367A9191BA2B34B00D1FE19 /* AppDelegate.swift in Sources */,
+				7367A97B1BA33BE000D1FE19 /* TimelineViewController.swift in Sources */,
+				7367A9411BA2B54500D1FE19 /* NewsTableViewController.swift in Sources */,
+				7367A97D1BA3472900D1FE19 /* BulletinTableViewController.swift in Sources */,
 				7367A91B1BA2B34B00D1FE19 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +406,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		73616B5A1BA7E93D0094BF69 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		73616B5B1BA7E93D0094BF69 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ImmlyHeroku;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
+			};
+			name = Distribution;
+		};
+		73616B5C1BA7E93D0094BF69 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImmlyHerokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ImmlyHerokuTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImmlyHeroku.app/ImmlyHeroku";
+			};
+			name = Distribution;
+		};
 		7367A9321BA2B34B00D1FE19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +495,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -298,6 +518,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -320,7 +541,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -335,6 +557,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -344,9 +567,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImmlyHeroku;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
 			};
 			name = Debug;
 		};
@@ -354,9 +585,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImmlyHeroku;
+				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
 			};
 			name = Release;
 		};
@@ -374,7 +613,7 @@
 				);
 				INFOPLIST_FILE = ImmlyHerokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImmlyHerokuTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImmlyHeroku.app/ImmlyHeroku";
 			};
 			name = Debug;
@@ -389,7 +628,7 @@
 				);
 				INFOPLIST_FILE = ImmlyHerokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImmlyHerokuTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImmlyHeroku.app/ImmlyHeroku";
 			};
 			name = Release;
@@ -402,6 +641,7 @@
 			buildConfigurations = (
 				7367A9321BA2B34B00D1FE19 /* Debug */,
 				7367A9331BA2B34B00D1FE19 /* Release */,
+				73616B5A1BA7E93D0094BF69 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -411,16 +651,20 @@
 			buildConfigurations = (
 				7367A9351BA2B34B00D1FE19 /* Debug */,
 				7367A9361BA2B34B00D1FE19 /* Release */,
+				73616B5B1BA7E93D0094BF69 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7367A9371BA2B34B00D1FE19 /* Build configuration list for PBXNativeTarget "ImmlyHerokuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7367A9381BA2B34B00D1FE19 /* Debug */,
 				7367A9391BA2B34B00D1FE19 /* Release */,
+				73616B5C1BA7E93D0094BF69 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

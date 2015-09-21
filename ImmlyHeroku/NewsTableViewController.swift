@@ -20,6 +20,7 @@ class NewsTableViewController: UITableViewController {
     
     var currentPageNumber = 1;
     var maxArticles = 100;
+    var numberOfSections = 0;
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
@@ -38,13 +39,28 @@ class NewsTableViewController: UITableViewController {
     
     func loadData() {
         
+        self.tableView.tableFooterView = UIView()
+        view.backgroundColor = UIColor.whiteColor()
+        
+        /*var strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 200, height: 50))
+        strLabel.text = "Loading"
+        strLabel.textColor = UIColor.blackColor()
+        
+        var messageFrame = UIView()
+        messageFrame = UIView(frame: CGRect(x: view.frame.midX - 90, y: view.frame.midY - 25 , width: 180, height: 50))
+        messageFrame.layer.cornerRadius = 15
+        //messageFrame.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        messageFrame.backgroundColor = UIColor.whiteColor()*/
+        
 
         var actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 50, 50)) as UIActivityIndicatorView
         actInd.center = self.view.center
         actInd.hidesWhenStopped = true
         actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        //messageFrame.addSubview(actInd)
         view.addSubview(actInd)
         actInd.startAnimating()
+
         
         
         
@@ -61,6 +77,7 @@ class NewsTableViewController: UITableViewController {
                 var jsonResults = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
                 self.arraySort.addObjectsFromArray(jsonResults["Results"] as! [AnyObject])
                 actInd.stopAnimating()
+                //messageFrame.removeFromSuperview()
                 self.tableView.reloadData()
 
                 
@@ -106,30 +123,44 @@ class NewsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("idCell", forIndexPath: indexPath) as! NewsCellTableViewCell
         
-        
+        if (indexPath.row < arraySort.count) {
 
-        let currentDictionary = arraySort[indexPath.row] as! Dictionary<String, AnyObject>
-        
-        //println(currentDictionary["title"])
-        
-        //cell.textLabel?.text = currentDictionary["title"]
-        //cell.companyLogo.layer.cornerRadius =  cell.companyLogo.frame.size.width / 2
-        //cell.companyLogo.clipsToBounds = true
-        var logo :UIImage = UIImage();
-        
-        if let logoURL = NSURL(string: currentDictionary["fileURL"] as! String) {
+            let currentDictionary = arraySort[indexPath.row] as! Dictionary<String, AnyObject>
             
-            if let data = NSData(contentsOfURL: logoURL) {
-                cell.companyLogo.contentMode = UIViewContentMode.ScaleAspectFit
-                cell.companyLogo.image = UIImage(data: data)
+            //println(currentDictionary["title"])
+            
+            //cell.textLabel?.text = currentDictionary["title"]
+            //cell.companyLogo.layer.cornerRadius =  cell.companyLogo.frame.size.width / 2
+            //cell.companyLogo.clipsToBounds = true
+            var logo :UIImage = UIImage();
+            
+            if let logoURL = NSURL(string: currentDictionary["fileURL"] as! String) {
                 
-            }
+                if let data = NSData(contentsOfURL: logoURL) {
+                    cell.companyLogo.contentMode = UIViewContentMode.ScaleAspectFit
+                    cell.companyLogo.image = UIImage(data: data)
+                    
+                }
 
+            }
+            
+            cell.title.text = currentDictionary["title"] as? String
+
+            
+            let encodedString = currentDictionary["summary"] as? String
+            
+            // encodedString should = a[0]["title"] in your case
+            
+            let encodedData = encodedString!.dataUsingEncoding(NSUTF8StringEncoding)!
+            let attributedOptions : [String: AnyObject] = [
+                NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                NSCharacterEncodingDocumentAttribute: NSUTF8StringEncoding
+            ]
+            let attributedString = NSAttributedString(data: encodedData, options: attributedOptions, documentAttributes: nil, error: nil)!
+            cell.descr.text = attributedString.string
         }
         
-        cell.title.text = currentDictionary["title"] as? String
-        cell.descr.text = currentDictionary["summary"] as? String
-        
+         
         
         return cell
     }
@@ -153,6 +184,16 @@ class NewsTableViewController: UITableViewController {
         
         showViewController(tutorialViewController, sender: self)
         
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.row == arraySort.count-1) {
+            var articlesDisplayed = arraySort.count
+            if (articlesDisplayed <= maxArticles) {
+                currentPageNumber++
+                loadData()
+            }
+        }
     }
     
     /*override func scrollViewDidScroll(scrollView: UIScrollView) {

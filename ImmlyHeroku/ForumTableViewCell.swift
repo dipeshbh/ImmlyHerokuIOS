@@ -10,17 +10,23 @@ import UIKit
 
 class ForumTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var indiaImg: UIImageView!
     @IBOutlet weak var gcType: UILabel!
     
+    @IBOutlet weak var cnImg: UIImageView!
     @IBOutlet weak var cnCutOff: UILabel!
     @IBOutlet weak var inCutOff: UILabel!
     
+    @IBOutlet weak var mxImg: UIImageView!
     
     @IBOutlet weak var mxCutOff: UILabel!
     
     @IBOutlet weak var rowCutOff: UILabel!
     
+    @IBOutlet weak var phImg: UIImageView!
     @IBOutlet weak var bulletinDate: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

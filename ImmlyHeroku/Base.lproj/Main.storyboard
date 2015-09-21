@@ -8,7 +8,7 @@
         <!--Forum-->
         <scene sceneID="BQC-Fq-0Q6">
             <objects>
-                <viewController id="ArD-PU-zy6" customClass="ForumViewController" customModule="ImmlyHerokuIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ArD-PU-zy6" customClass="ForumViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZCC-EL-RRK"/>
                         <viewControllerLayoutGuide type="bottom" id="IvP-pl-A4l"/>
@@ -52,7 +52,7 @@
             <objects>
                 <navigationController id="yMF-Vx-1yC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="social20.png" id="qZB-M4-uHu">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4oh-Iy-p1Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -69,7 +69,7 @@
         <!--News Detail View Controller-->
         <scene sceneID="9ak-gy-3zy">
             <objects>
-                <viewController storyboardIdentifier="newsdetailviewcontroller" id="JHA-N0-0fv" customClass="NewsDetailViewController" customModule="ImmlyHerokuIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newsdetailviewcontroller" id="JHA-N0-0fv" customClass="NewsDetailViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3kP-5u-j8P"/>
                         <viewControllerLayoutGuide type="bottom" id="MZR-uM-9UK"/>
@@ -102,9 +102,9 @@
         <!--News-->
         <scene sceneID="Siv-mI-k7Q">
             <objects>
-                <tableViewController title="News" id="3nN-fI-37G" customClass="TimelineViewController" customModule="ImmlyHerokuIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="News" id="3nN-fI-37G" customClass="TimelineViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="N90-3d-dee">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -120,7 +120,8 @@
                             <outlet property="delegate" destination="3nN-fI-37G" id="jmR-dO-9r1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vp4-Ej-plS"/>
+                    <navigationItem key="navigationItem" title="Latest Immigration Tweets" id="vp4-Ej-plS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxg-Rj-5uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +132,7 @@
             <objects>
                 <navigationController id="TZZ-PN-Ogq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="twitter47.png" id="vy2-7f-hOt">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Lm-7Q-6ls">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -150,7 +151,7 @@
             <objects>
                 <navigationController id="7Sd-Wb-BXu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="calendar48.png" id="n4M-yF-3sK">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ams-dD-drB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -164,83 +165,71 @@
             </objects>
             <point key="canvasLocation" x="-1016" y="817"/>
         </scene>
-        <!--Bulletin Table View Controller-->
+        <!--Bulletin Update-->
         <scene sceneID="wSN-Pz-y4F">
             <objects>
-                <tableViewController id="8wf-av-FNR" customClass="BulletinTableViewController" customModule="ImmlyHerokuIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="193" sectionHeaderHeight="22" sectionFooterHeight="22" id="iL1-D2-3WH">
+                <tableViewController id="8wf-av-FNR" customClass="BulletinTableViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="232" sectionHeaderHeight="22" sectionFooterHeight="22" id="iL1-D2-3WH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idBulletinCell" rowHeight="193" id="Zvd-J8-mBd" customClass="ForumTableViewCell" customModule="ImmlyHerokuIOS" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idBulletinCell" rowHeight="232" id="Zvd-J8-mBd" customClass="ForumTableViewCell" customModule="ImmlyHeroku" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zvd-J8-mBd" id="aEu-iT-sCN">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdg-0d-8uP">
-                                            <rect key="frame" x="19" y="86" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="India" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFS-aI-K6a">
-                                            <rect key="frame" x="110" y="40" width="38" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="China" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-2t-CmE">
-                                            <rect key="frame" x="110" y="84" width="45" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mexico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkR-Zc-oYV">
-                                            <rect key="frame" x="110" y="122" width="56" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Philip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zN-7r-0NN">
-                                            <rect key="frame" x="110" y="163" width="43" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="19" y="83" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-Is-B3C">
-                                            <rect key="frame" x="196" y="40" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIi-l9-COX">
-                                            <rect key="frame" x="196" y="84" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="196" y="40" width="171" height="21"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ4-F6-cWn">
-                                            <rect key="frame" x="196" y="121" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="196" y="131" width="171" height="21"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwi-A2-2m6">
-                                            <rect key="frame" x="196" y="162" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="196" y="181" width="171" height="21"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjX-ce-QsG">
-                                            <rect key="frame" x="19" y="120" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="19" y="120" width="83" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CutOff Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-4F-38S">
                                             <rect key="frame" x="178" y="8" width="91" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGf-gg-LKR">
+                                            <rect key="frame" x="105" y="32" width="50" height="37"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-GY-fHM">
+                                            <rect key="frame" x="105" y="78" width="50" height="37"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="osN-9v-xYC">
+                                            <rect key="frame" x="105" y="123" width="50" height="37"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNn-dB-3UK">
+                                            <rect key="frame" x="105" y="173" width="50" height="37"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIi-l9-COX">
+                                            <rect key="frame" x="196" y="86" width="171" height="21"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -249,9 +238,13 @@
                                 <connections>
                                     <outlet property="bulletinDate" destination="EjX-ce-QsG" id="Krs-vx-MsN"/>
                                     <outlet property="cnCutOff" destination="AIi-l9-COX" id="9Fp-Hi-Eui"/>
+                                    <outlet property="cnImg" destination="Jnh-GY-fHM" id="KWZ-FH-qUE"/>
                                     <outlet property="gcType" destination="Wdg-0d-8uP" id="XMJ-1g-eDc"/>
                                     <outlet property="inCutOff" destination="B1k-Is-B3C" id="ZQT-BV-FFF"/>
+                                    <outlet property="indiaImg" destination="ZGf-gg-LKR" id="u7Z-4J-U0k"/>
                                     <outlet property="mxCutOff" destination="xJ4-F6-cWn" id="9BM-th-bV6"/>
+                                    <outlet property="mxImg" destination="osN-9v-xYC" id="z1O-DA-bxF"/>
+                                    <outlet property="phImg" destination="QNn-dB-3UK" id="bZQ-vo-cUb"/>
                                     <outlet property="rowCutOff" destination="Iwi-A2-2m6" id="Z0F-uv-CkX"/>
                                 </connections>
                             </tableViewCell>
@@ -265,7 +258,7 @@
                     <tabBarItem key="tabBarItem" title="" image="calendar48.png" id="rNu-1c-yW7" userLabel="Bulletin">
                         <inset key="imageInsets" minX="16" minY="22" maxX="10" maxY="12"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="EoU-pP-oEH"/>
+                    <navigationItem key="navigationItem" title="Bulletin Update" id="EoU-pP-oEH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsY-rO-E5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -275,29 +268,30 @@
         <!--News-->
         <scene sceneID="sSg-Lj-XD5">
             <objects>
-                <tableViewController title="News" id="ZHL-tU-oJx" customClass="NewsTableViewController" customModule="ImmlyHerokuIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="News" id="ZHL-tU-oJx" customClass="NewsTableViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="22" sectionFooterHeight="22" id="0pf-bE-fyP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCell" rowHeight="99" id="iWQ-FN-Jni" customClass="NewsCellTableViewCell" customModule="ImmlyHerokuIOS" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCell" rowHeight="99" id="iWQ-FN-Jni" customClass="NewsCellTableViewCell" customModule="ImmlyHeroku" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iWQ-FN-Jni" id="3Ow-jb-Knl">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V01-Et-pge">
-                                            <rect key="frame" x="19" y="8" width="87" height="61.5"/>
+                                            <rect key="frame" x="19" y="14" width="49" height="44.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-HK-Qo5">
-                                            <rect key="frame" x="152" y="8" width="440" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-HK-Qo5">
+                                            <rect key="frame" x="95" y="8" width="250" height="37"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                            <color key="textColor" red="0.7301925505050505" green="0.4872101817679334" blue="0.24110379182718514" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-nB-P5M">
-                                            <rect key="frame" x="152" y="48" width="440" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-nB-P5M">
+                                            <rect key="frame" x="95" y="46" width="250" height="52.5"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -315,21 +309,32 @@
                             <outlet property="delegate" destination="ZHL-tU-oJx" id="zbl-PM-ceN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ene-2d-rJZ"/>
+                    <navigationItem key="navigationItem" title="Latest News" id="ene-2d-rJZ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="LzN-m9-Qre">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRx-9i-3Bg">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="JHA-N0-0fv" kind="show" id="SOD-7k-yCK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9s-Fl-Jbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="-744"/>
+            <point key="canvasLocation" x="277.5" y="-744.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q8H-kR-upO">
             <objects>
                 <navigationController id="5GL-kS-ruR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="newspaper18.png" id="bVf-fZ-kfT" userLabel="News">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KMO-67-pNQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -352,6 +357,7 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="5GL-kS-ruR" kind="relationship" relationship="viewControllers" id="0ig-n8-fjo"/>
@@ -366,9 +372,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar48.png" width="30" height="30"/>
-        <image name="newspaper18.png" width="30" height="30"/>
-        <image name="social20.png" width="30" height="30"/>
-        <image name="twitter47.png" width="30" height="30"/>
+        <image name="calendar48.png" width="23" height="23"/>
+        <image name="newspaper18.png" width="23" height="23"/>
+        <image name="social20.png" width="23" height="23"/>
+        <image name="twitter47.png" width="23" height="23"/>
     </resources>
 </document>

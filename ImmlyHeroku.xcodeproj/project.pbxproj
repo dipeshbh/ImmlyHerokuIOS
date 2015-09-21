@@ -45,6 +45,11 @@
 		7394C2F51BA53F5900D3E5B3 /* twitter47.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F11BA53F5900D3E5B3 /* twitter47.png */; };
 		7394C2F71BA682F000D3E5B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F61BA682F000D3E5B3 /* iTunesArtwork.png */; };
 		7394C2F91BA6830900D3E5B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */; };
+		739DF81C1BAE75960070B7A0 /* mx.png in Resources */ = {isa = PBXBuildFile; fileRef = 739DF8181BAE75960070B7A0 /* mx.png */; };
+		739DF81D1BAE75960070B7A0 /* ph.png in Resources */ = {isa = PBXBuildFile; fileRef = 739DF8191BAE75960070B7A0 /* ph.png */; };
+		739DF81E1BAE75960070B7A0 /* china.png in Resources */ = {isa = PBXBuildFile; fileRef = 739DF81A1BAE75960070B7A0 /* china.png */; };
+		739DF81F1BAE75960070B7A0 /* india.png in Resources */ = {isa = PBXBuildFile; fileRef = 739DF81B1BAE75960070B7A0 /* india.png */; };
+		739DF8211BAF87890070B7A0 /* TwitterNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DF8201BAF87890070B7A0 /* TwitterNavigationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,11 @@
 		7394C2F11BA53F5900D3E5B3 /* twitter47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter47.png; sourceTree = "<group>"; };
 		7394C2F61BA682F000D3E5B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		739DF8181BAE75960070B7A0 /* mx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mx.png; sourceTree = "<group>"; };
+		739DF8191BAE75960070B7A0 /* ph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ph.png; sourceTree = "<group>"; };
+		739DF81A1BAE75960070B7A0 /* china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = china.png; sourceTree = "<group>"; };
+		739DF81B1BAE75960070B7A0 /* india.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = india.png; sourceTree = "<group>"; };
+		739DF8201BAF87890070B7A0 /* TwitterNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterNavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +192,11 @@
 				7367A91A1BA2B34B00D1FE19 /* FirstViewController.swift */,
 				7367A91C1BA2B34B00D1FE19 /* SecondViewController.swift */,
 				7367A91E1BA2B34B00D1FE19 /* Main.storyboard */,
+				739DF8201BAF87890070B7A0 /* TwitterNavigationItem.swift */,
+				739DF8181BAE75960070B7A0 /* mx.png */,
+				739DF8191BAE75960070B7A0 /* ph.png */,
+				739DF81A1BAE75960070B7A0 /* china.png */,
+				739DF81B1BAE75960070B7A0 /* india.png */,
 				7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */,
 				7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */,
 				7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */,
@@ -314,14 +329,18 @@
 			files = (
 				7367A9781BA33B8C00D1FE19 /* TwitterKitResources.bundle in Resources */,
 				7367A9201BA2B34B00D1FE19 /* Main.storyboard in Resources */,
+				739DF81C1BAE75960070B7A0 /* mx.png in Resources */,
 				7394C2F41BA53F5900D3E5B3 /* social20.png in Resources */,
 				7394C2F31BA53F5900D3E5B3 /* newspaper18.png in Resources */,
 				7367A9251BA2B34B00D1FE19 /* LaunchScreen.xib in Resources */,
 				7367A9221BA2B34B00D1FE19 /* Images.xcassets in Resources */,
 				7394C2F71BA682F000D3E5B3 /* iTunesArtwork.png in Resources */,
 				7394C2F51BA53F5900D3E5B3 /* twitter47.png in Resources */,
+				739DF81F1BAE75960070B7A0 /* india.png in Resources */,
+				739DF81D1BAE75960070B7A0 /* ph.png in Resources */,
 				7394C2F91BA6830900D3E5B3 /* iTunesArtwork.png in Resources */,
 				7394C2F21BA53F5900D3E5B3 /* calendar48.png in Resources */,
+				739DF81E1BAE75960070B7A0 /* china.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +384,7 @@
 				7367A9411BA2B54500D1FE19 /* NewsTableViewController.swift in Sources */,
 				7367A97D1BA3472900D1FE19 /* BulletinTableViewController.swift in Sources */,
 				7367A91B1BA2B34B00D1FE19 /* FirstViewController.swift in Sources */,
+				739DF8211BAF87890070B7A0 /* TwitterNavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

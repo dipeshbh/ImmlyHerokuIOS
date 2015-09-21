@@ -9,17 +9,40 @@
 import UIKit
 
 class BulletinTableViewController: UITableViewController {
+
+    
     
     var arraySort:NSArray = [Dictionary<String, AnyObject>]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        view.backgroundColor = UIColor.whiteColor()
+        self.tableView.tableFooterView = UIView()
+        
+        
+        /*var strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 200, height: 50))
+        strLabel.text = "Loading"
+        strLabel.textColor = UIColor.blackColor()
+        
+        var messageFrame = UIView()
+        messageFrame = UIView(frame: CGRect(x: view.frame.midX - 90, y: view.frame.midY - 25 , width: 180, height: 50))
+        messageFrame.layer.cornerRadius = 15
+        //messageFrame.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        messageFrame.backgroundColor = UIColor.whiteColor()*/
+        
+        
+        var actInd : UIActivityIndicatorView = UIActivityIndicatorView()
+        
+        actInd.center = self.view.center
+        actInd.hidesWhenStopped = true
+        actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        //messageFrame.addSubview(actInd)
+        view.addSubview(actInd)
+        view.bringSubviewToFront(actInd)
+        //self.tableView.tableHeaderView = actInd
+        actInd.startAnimating()
+        
         
         let url = NSURL(string: "https://immlyheroku.herokuapp.com/iostrack")
         
@@ -27,6 +50,7 @@ class BulletinTableViewController: UITableViewController {
             if (error == nil) {
                 var jsonResults = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
                 self.arraySort = jsonResults["results"] as! NSArray
+                actInd.stopAnimating()
                 self.tableView.reloadData()
                 
                 
@@ -63,17 +87,42 @@ class BulletinTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("idBulletinCell", forIndexPath: indexPath) as! ForumTableViewCell
-
-        cell.inCutOff.text = self.arraySort[indexPath.row]["INCutoffDate"] as? String
-        cell.cnCutOff.text = self.arraySort[indexPath.row]["CNCutoffDate"] as? String
-        cell.mxCutOff.text = self.arraySort[indexPath.row]["MXCutoffDate"] as? String
-        cell.rowCutOff.text = self.arraySort[indexPath.row]["PHCutoffDate"] as? String
+        
+        
+        cell.inCutOff.text = convertDateFormater((self.arraySort[indexPath.row]["INCutoffDate"] as? String)!)
+        cell.cnCutOff.text = convertDateFormater((self.arraySort[indexPath.row]["CNCutoffDate"] as? String)!)
+        cell.mxCutOff.text = convertDateFormater((self.arraySort[indexPath.row]["MXCutoffDate"] as? String)!)
+        cell.rowCutOff.text = convertDateFormater((self.arraySort[indexPath.row]["PHCutoffDate"] as? String)!)
         cell.gcType.text = self.arraySort[indexPath.row]["EB"] as? String
         cell.bulletinDate.text = self.arraySort[indexPath.row]["BulletinDate"] as? String
+        
+        cell.indiaImg.image = UIImage(named:"india.png")
+        cell.cnImg.image = UIImage(named:"china.png")
+        cell.mxImg.image = UIImage(named:"mx.png")
+        cell.phImg.image = UIImage(named: "ph.png")
+
+
 
         // Configure the cell...
 
         return cell
+    }
+    
+    func convertDateFormater(date: String) -> String
+    {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = NSTimeZone(name: "UTC")
+        let date = dateFormatter.dateFromString(date)
+        
+        
+        dateFormatter.dateFormat = "MMM dd','yyyy"
+        dateFormatter.timeZone = NSTimeZone(name: "UTC")
+        let timeStamp = dateFormatter.stringFromDate(date!)
+        
+        
+        return timeStamp
     }
 
 

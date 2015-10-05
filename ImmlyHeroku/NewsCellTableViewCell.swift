@@ -14,6 +14,7 @@ class NewsCellTableViewCell: UITableViewCell {
   
     @IBOutlet weak var companyLogo: UIImageView!
 
+    @IBOutlet weak var viewComments: UIButton!
     
     @IBOutlet weak var title: UILabel!
     

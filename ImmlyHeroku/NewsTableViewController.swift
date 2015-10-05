@@ -21,7 +21,11 @@ class NewsTableViewController: UITableViewController {
     var currentPageNumber = 1;
     var maxArticles = 100;
     var numberOfSections = 0;
-
+    var imageCache: NSCache = NSCache()
+    var pageRefreshControl:UIRefreshControl = UIRefreshControl()
+    var commentsView:UIWebView = UIWebView()
+    var request:NSMutableURLRequest = NSMutableURLRequest()
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
@@ -30,6 +34,11 @@ class NewsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.pageRefreshControl = UIRefreshControl()
+        self.pageRefreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.pageRefreshControl.addTarget(self, action: "loadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(pageRefreshControl)
+
         loadData()
         
     }
@@ -76,10 +85,11 @@ class NewsTableViewController: UITableViewController {
             if (error == nil) {
                 var jsonResults = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
                 self.arraySort.addObjectsFromArray(jsonResults["Results"] as! [AnyObject])
-                actInd.stopAnimating()
-                //messageFrame.removeFromSuperview()
-                self.tableView.reloadData()
 
+                dispatch_async(dispatch_get_main_queue()) {
+                    actInd.stopAnimating()
+                    self.tableView.reloadData()
+                }
                 
             } else {    
                 println(error.localizedDescription);
@@ -132,17 +142,24 @@ class NewsTableViewController: UITableViewController {
             //cell.textLabel?.text = currentDictionary["title"]
             //cell.companyLogo.layer.cornerRadius =  cell.companyLogo.frame.size.width / 2
             //cell.companyLogo.clipsToBounds = true
-            var logo :UIImage = UIImage();
             
-            if let logoURL = NSURL(string: currentDictionary["fileURL"] as! String) {
-                
-                if let data = NSData(contentsOfURL: logoURL) {
-                    cell.companyLogo.contentMode = UIViewContentMode.ScaleAspectFit
-                    cell.companyLogo.image = UIImage(data: data)
+            var logo :UIImage? = self.imageCache.objectForKey(indexPath.row) as? UIImage
+            
+            if (logo == nil) {
+            
+                if let logoURL = NSURL(string: currentDictionary["fileURL"] as! String) {
                     
-                }
+                    if let data = NSData(contentsOfURL: logoURL) {
+                        logo = UIImage(data: data)
+                        imageCache.setObject(logo!, forKey:indexPath.row)
+                        
+                    }
 
+                }
             }
+            
+            cell.companyLogo.contentMode = UIViewContentMode.ScaleAspectFit
+            cell.companyLogo.image = logo
             
             cell.title.text = currentDictionary["title"] as? String
 
@@ -158,11 +175,48 @@ class NewsTableViewController: UITableViewController {
             ]
             let attributedString = NSAttributedString(data: encodedData, options: attributedOptions, documentAttributes: nil, error: nil)!
             cell.descr.text = attributedString.string
+            
+            cell.viewComments.tag = indexPath.row
+            cell.viewComments.setValue(currentDictionary["title"] as? String, forKey: "title")
+            cell.viewComments.addTarget(self, action: Selector("viewComments:"), forControlEvents: UIControlEvents.TouchUpInside)
+            
         }
         
          
         
         return cell
+    }
+    
+    func viewComments(sender: UIButton) {
+        
+        let currentDictionary = arraySort[sender.tag] as! Dictionary<String, AnyObject>
+        
+        
+        var title = currentDictionary["title"] as? String
+        
+        var urlString = "https://immlyheroku.herokuapp.com/comments?title="+title!
+        var strLnk = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        let addressUrl = NSURL(string: strLnk!)
+        
+        request = NSMutableURLRequest(URL: addressUrl!) as NSMutableURLRequest!
+        self.performSegueWithIdentifier("viewComments", sender: self)
+        
+        
+        //self.view.addSubview(commentsView)
+
+        //self.view.bringSubviewToFront(commentsView)
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "viewComments") {
+            var destinationViewController = segue.destinationViewController as? CommentsViewController
+            destinationViewController?.request = request
+
+        }
+
+        
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

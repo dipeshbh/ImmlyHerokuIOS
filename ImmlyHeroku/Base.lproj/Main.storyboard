@@ -26,7 +26,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uf-mY-Qha">
                                 <rect key="frame" x="152" y="11" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="center" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OTT-q4-aCL">
@@ -78,8 +78,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48m-7N-bru">
-                                <rect key="frame" x="-106" y="-119" width="706" height="786"/>
+                            <webView contentMode="scaleToFill" ambiguous="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48m-7N-bru">
+                                <rect key="frame" x="-9" y="0.0" width="384" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
@@ -89,6 +89,13 @@
                             <constraint firstItem="48m-7N-bru" firstAttribute="bottom" secondItem="KCd-Gx-xa4" secondAttribute="bottomMargin" id="jMw-ht-Iwv"/>
                             <constraint firstItem="48m-7N-bru" firstAttribute="leading" secondItem="KCd-Gx-xa4" secondAttribute="leadingMargin" constant="-122" id="l40-Va-FW2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hdd-7W-KIW"/>
+                                <exclude reference="jMw-ht-Iwv"/>
+                                <exclude reference="l40-Va-FW2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -97,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Df8-Oi-Bup" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="-259"/>
+            <point key="canvasLocation" x="1475.5" y="-259.5"/>
         </scene>
         <!--News-->
         <scene sceneID="Siv-mI-k7Q">
@@ -125,7 +132,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxg-Rj-5uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953" y="-935"/>
+            <point key="canvasLocation" x="3351.5" y="-935.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JKY-Tk-hR7">
@@ -144,7 +151,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeG-0F-9rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="-935"/>
+            <point key="canvasLocation" x="2532" y="-935"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hhP-Pi-0CA">
@@ -174,7 +181,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idBulletinCell" rowHeight="232" id="Zvd-J8-mBd" customClass="ForumTableViewCell" customModule="ImmlyHeroku" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idBulletinCell" id="Zvd-J8-mBd" customClass="ForumTableViewCell" customModule="ImmlyHeroku" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zvd-J8-mBd" id="aEu-iT-sCN">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -188,19 +195,19 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-Is-B3C">
                                             <rect key="frame" x="196" y="40" width="171" height="21"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ4-F6-cWn">
                                             <rect key="frame" x="196" y="131" width="171" height="21"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwi-A2-2m6">
                                             <rect key="frame" x="196" y="181" width="171" height="21"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjX-ce-QsG">
@@ -230,7 +237,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIi-l9-COX">
                                             <rect key="frame" x="196" y="86" width="171" height="21"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -292,15 +299,22 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-nB-P5M">
                                             <rect key="frame" x="95" y="46" width="250" height="52.5"/>
                                             <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-CD-aaO">
+                                            <rect key="frame" x="315" y="38" width="78" height="23"/>
+                                            <state key="normal" image="speechbubble65.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="companyLogo" destination="V01-Et-pge" id="r3e-k2-biA"/>
                                     <outlet property="descr" destination="e5M-nB-P5M" id="qXK-Kj-Lzu"/>
                                     <outlet property="title" destination="hUa-HK-Qo5" id="SDP-u0-tNy"/>
+                                    <outlet property="viewComments" destination="PS8-CD-aaO" id="G8x-ai-fFt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -323,11 +337,41 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="JHA-N0-0fv" kind="show" id="SOD-7k-yCK"/>
+                        <segue destination="rlC-qh-jWV" kind="show" identifier="viewComments" id="WXe-ce-ilN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9s-Fl-Jbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="277.5" y="-744.5"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="03t-GM-RDH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Aq-a8-1G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rlC-qh-jWV" customClass="CommentsViewController" customModule="ImmlyHeroku" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xAg-N6-V8K"/>
+                        <viewControllerLayoutGuide type="bottom" id="PtX-v3-jWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3vU-Ft-Dqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEe-iF-RGb">
+                                <rect key="frame" x="0.0" y="38" width="375" height="629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SOm-yE-LQZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="viewComments" destination="HEe-iF-RGb" id="Id5-ls-Q15"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1351.5" y="-1454.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q8H-kR-upO">
@@ -375,6 +419,7 @@
         <image name="calendar48.png" width="23" height="23"/>
         <image name="newspaper18.png" width="23" height="23"/>
         <image name="social20.png" width="23" height="23"/>
+        <image name="speechbubble65.png" width="24" height="24"/>
         <image name="twitter47.png" width="23" height="23"/>
     </resources>
 </document>

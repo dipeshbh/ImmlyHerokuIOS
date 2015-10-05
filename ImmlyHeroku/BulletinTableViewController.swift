@@ -50,8 +50,11 @@ class BulletinTableViewController: UITableViewController {
             if (error == nil) {
                 var jsonResults = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
                 self.arraySort = jsonResults["results"] as! NSArray
-                actInd.stopAnimating()
-                self.tableView.reloadData()
+
+                dispatch_async(dispatch_get_main_queue()) {
+                    actInd.stopAnimating()
+                    self.tableView.reloadData()
+                }
                 
                 
             } else {

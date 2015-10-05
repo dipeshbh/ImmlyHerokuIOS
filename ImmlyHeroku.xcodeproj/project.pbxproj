@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73326E7C1BB9217C00A95C08 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73326E7B1BB9217C00A95C08 /* CommentsViewController.swift */; };
 		7367A9191BA2B34B00D1FE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A9181BA2B34B00D1FE19 /* AppDelegate.swift */; };
 		7367A91B1BA2B34B00D1FE19 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A91A1BA2B34B00D1FE19 /* FirstViewController.swift */; };
 		7367A91D1BA2B34B00D1FE19 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A91C1BA2B34B00D1FE19 /* SecondViewController.swift */; };
@@ -37,6 +38,7 @@
 		7367A9791BA33B8C00D1FE19 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7367A9751BA33B8C00D1FE19 /* TwitterCore.framework */; };
 		7367A97B1BA33BE000D1FE19 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A97A1BA33BE000D1FE19 /* TimelineViewController.swift */; };
 		7367A97D1BA3472900D1FE19 /* BulletinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */; };
+		7380397C1BBA53A9003CA370 /* speechbubble65.png in Resources */ = {isa = PBXBuildFile; fileRef = 7380397B1BBA53A9003CA370 /* speechbubble65.png */; };
 		7394C2EB1BA4E4E800D3E5B3 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */; };
 		7394C2ED1BA4EEF400D3E5B3 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */; };
 		7394C2F21BA53F5900D3E5B3 /* calendar48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7394C2EE1BA53F5900D3E5B3 /* calendar48.png */; };
@@ -63,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73326E7B1BB9217C00A95C08 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		7367A9131BA2B34B00D1FE19 /* ImmlyHeroku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImmlyHeroku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7367A9171BA2B34B00D1FE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7367A9181BA2B34B00D1FE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		7367A9751BA33B8C00D1FE19 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		7367A97A1BA33BE000D1FE19 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewController.swift; sourceTree = "<group>"; };
+		7380397B1BBA53A9003CA370 /* speechbubble65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechbubble65.png; sourceTree = "<group>"; };
 		7394C2EA1BA4E4E800D3E5B3 /* ForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		7394C2EE1BA53F5900D3E5B3 /* calendar48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar48.png; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				7394C2EC1BA4EEF400D3E5B3 /* ForumTableViewCell.swift */,
 				7367A97C1BA3472900D1FE19 /* BulletinTableViewController.swift */,
 				7367A9211BA2B34B00D1FE19 /* Images.xcassets */,
+				7380397B1BBA53A9003CA370 /* speechbubble65.png */,
 				7394C2EE1BA53F5900D3E5B3 /* calendar48.png */,
 				7394C2F81BA6830900D3E5B3 /* iTunesArtwork.png */,
 				7394C2EF1BA53F5900D3E5B3 /* newspaper18.png */,
@@ -209,6 +214,7 @@
 				7367A9231BA2B34B00D1FE19 /* LaunchScreen.xib */,
 				7367A9161BA2B34B00D1FE19 /* Supporting Files */,
 				7367A93E1BA2B54500D1FE19 /* NewsTableViewController.swift */,
+				73326E7B1BB9217C00A95C08 /* CommentsViewController.swift */,
 				7367A93F1BA2B54500D1FE19 /* NewsCellTableViewCell.swift */,
 				7367A9401BA2B54500D1FE19 /* NewsDetailViewController.swift */,
 			);
@@ -331,6 +337,7 @@
 				7367A9201BA2B34B00D1FE19 /* Main.storyboard in Resources */,
 				739DF81C1BAE75960070B7A0 /* mx.png in Resources */,
 				7394C2F41BA53F5900D3E5B3 /* social20.png in Resources */,
+				7380397C1BBA53A9003CA370 /* speechbubble65.png in Resources */,
 				7394C2F31BA53F5900D3E5B3 /* newspaper18.png in Resources */,
 				7367A9251BA2B34B00D1FE19 /* LaunchScreen.xib in Resources */,
 				7367A9221BA2B34B00D1FE19 /* Images.xcassets in Resources */,
@@ -382,6 +389,7 @@
 				7367A9191BA2B34B00D1FE19 /* AppDelegate.swift in Sources */,
 				7367A97B1BA33BE000D1FE19 /* TimelineViewController.swift in Sources */,
 				7367A9411BA2B54500D1FE19 /* NewsTableViewController.swift in Sources */,
+				73326E7C1BB9217C00A95C08 /* CommentsViewController.swift in Sources */,
 				7367A97D1BA3472900D1FE19 /* BulletinTableViewController.swift in Sources */,
 				7367A91B1BA2B34B00D1FE19 /* FirstViewController.swift in Sources */,
 				739DF8211BAF87890070B7A0 /* TwitterNavigationItem.swift in Sources */,
@@ -469,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,6 +486,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
+				INSTALL_GROUP = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ImmlyHeroku;
 				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
@@ -587,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -595,6 +606,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
+				INSTALL_GROUP = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ImmlyHeroku;
 				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";
@@ -605,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dipesh BHATTACHARYA (QD8AWGTAW5)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -613,6 +626,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ImmlyHeroku/Info.plist;
+				INSTALL_GROUP = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ImmlyHeroku;
 				PROVISIONING_PROFILE = "b4ecf185-bee2-4b4e-80ce-3494639ba06c";

@@ -8,6 +8,7 @@
 
 import UIKit
 import TwitterKit
+import Parse
 
 
 class TimelineViewController: TWTRTimelineViewController {
@@ -19,10 +20,11 @@ class TimelineViewController: TWTRTimelineViewController {
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Tweet", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("composeTweet"))
         
-        view.backgroundColor = UIColor.whiteColor()
+        //view.backgroundColor = UIColor.whiteColor()
+        
         self.tableView.tableFooterView = UIView()
 
-        
+        /*
         /*var strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 200, height: 50))
         strLabel.text = "Loading"
         strLabel.textColor = UIColor.blackColor()
@@ -40,32 +42,46 @@ class TimelineViewController: TWTRTimelineViewController {
         actInd.hidesWhenStopped = true
         actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         //messageFrame.addSubview(actInd)
-        //view.addSubview(actInd)
-        self.tableView.tableHeaderView = actInd
-        self.tableView.bringSubviewToFront(actInd)
+        view.addSubview(actInd)
+        view.bringSubviewToFront(actInd)
         actInd.startAnimating()
-
+        */
         
+        var query = PFQuery(className: "TwitterTags")
+        var tags = query.findObjects()!
+        var searchString = ""
+        var endString = "%20OR%20"
+        var count = 0;
         
-        Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-
-            if let validSession = session {
+        for tag in tags {
+            
+            count++
+            var pfObject = tag as! PFObject
+            if let tagString = pfObject["Tag"] as? NSString {
                 
-                let client = Twitter.sharedInstance().APIClient
-                actInd.stopAnimating()
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "%23I140EAD%20OR%20%23immigrationreform", APIClient: client)
-
+                if (count == tags.count) {
+                    endString = ""
+                }
                 
-                
-            } else {
-                
-                println("error: \(error!.localizedDescription)")
+                searchString = searchString + String(tagString) + endString
                 
             }
-            
-            self.showTweetActions = true
-            
         }
+
+        
+            let client = TWTRAPIClient()
+            
+            
+            //actInd.stopAnimating()
+           
+            self.dataSource = TWTRSearchTimelineDataSource(searchQuery: searchString, APIClient: client)
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView.reloadData()
+            }
+        
+            self.showTweetActions = true
+
         
         
             // Do any additional setup after loading the view.
